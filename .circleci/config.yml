@@ -1,15 +1,17 @@
-version: 2.1
-orbs:
-  ruby: circleci/ruby@0.1.2 
+// the code which uses the functions
+let elem = createElement();
+setHandler(elem);
+walkAround();
 
-jobs:
-  build:
-    docker:
-      - image: circleci/ruby:2.6.3-stretch-node
-    executor: ruby/default
-    steps:
-      - checkout
-      - run:
-          name: Which bundler?
-          command: bundle -v
-      - ruby/bundle-install
+// --- helper functions ---
+function createElement() {
+  ...
+}
+
+function setHandler(elem) {
+  ...
+}
+
+function walkAround() {
+  ...
+}
